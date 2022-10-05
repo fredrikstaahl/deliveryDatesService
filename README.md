@@ -17,8 +17,8 @@ The days in advance means full (delivery) days until the product can be delivere
 Install the project locally
 
 ```git
-  git clone x...
-  cd my-project
+  git clone https://github.com/fredrikstaahl/deliveryDatesService.git
+  cd deliveryDatesService
   npm install
 ```
 
