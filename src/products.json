@@ -1,0 +1,37 @@
+[
+  {
+    "productId": "0001",
+    "name": "Skånemejeri Filmjölk Laktosfri 1L",
+    "deliveryDays": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+    "productType": "normal",
+    "daysInAdvance": 1
+  },
+  {
+    "productId": "0002",
+    "name": "Pågen Limpa 700g",
+    "deliveryDays": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sun"],
+    "productType": "normal",
+    "daysInAdvance": 1
+  },
+  {
+    "productId": "0054",
+    "name": "Lampolja",
+    "deliveryDays": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "productType": "external",
+    "daysInAdvance": 2
+  },
+  {
+    "productId": "0089",
+    "name": "Grillkol",
+    "deliveryDays": ["Thu", "Fri", "Sat", "Sun"],
+    "productType": "temporary",
+    "daysInAdvance": 1
+  },
+  {
+    "productId": "0093",
+    "name": "Jordgubbar",
+    "deliveryDays": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "productType": "temporary",
+    "daysInAdvance": 1
+  }
+]
