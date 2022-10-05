@@ -22,6 +22,10 @@ Install the project locally
   npm install
 ```
 
+## Products.json
+
+Products.json contains a list of products that can be used when passing products to the service.
+
 ## Usage/Examples
 
 Example: npm run getDeliveryDates productIds={comma-separated list of product ids} postalCode={postalCode}
