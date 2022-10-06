@@ -13,6 +13,10 @@ describe('Test getPossibleDeliveryDays', () => {
   test('Test to make sure that function returns correct number of delivery days', () => {
     expect(getPossibleDeliveryDates(123, ['0001', '0002', '0054'])).toHaveLength(7);
   });
+
+  test.only('Test to make sure that function returns correct number of delivery days', () => {
+    expect(getPossibleDeliveryDates(123, ['0001'])).toHaveLength(9);
+  });
 });
 
 describe('Test initPotentialDeliveryDates', () => {
@@ -64,7 +68,8 @@ describe('Test sortDates', () => {
     const date3: DeliveryDateOption = new DeliveryDateOption(11266, new Date(), false);
 
     let dateArray: DeliveryDateOption[] = [date1, date2, date3];
-    expect(sortDates(dateArray)[0].isGreenDelivery).toBeTruthy;
+    expect(sortDates(dateArray)[0].isGreenDelivery).toBe(true);
+    expect(sortDates(dateArray)[1].isGreenDelivery).toBe(false);
   });
 
   test('Test that green delivery does not triumph non green delivery if not within 3 days', () => {
@@ -73,6 +78,6 @@ describe('Test sortDates', () => {
     const date3: DeliveryDateOption = new DeliveryDateOption(11266, new Date(), false);
 
     let dateArray: DeliveryDateOption[] = [date1, date2, date3];
-    expect(sortDates(dateArray)[0].isGreenDelivery).toBeTruthy;
+    expect(sortDates(dateArray)[0].isGreenDelivery).toBe(true);
   });
 });
