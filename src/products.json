@@ -33,5 +33,12 @@
     "deliveryDays": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
     "productType": "temporary",
     "daysInAdvance": 1
+  },
+  {
+    "productId": "1003",
+    "name": "Olivolja Italiensk Äkta 70cl",
+    "deliveryDays": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "productType": "temporary",
+    "daysInAdvance": 5
   }
 ]

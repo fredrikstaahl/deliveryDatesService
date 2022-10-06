@@ -53,6 +53,11 @@ export const getPossibleDeliveryDates = (postalCode: number, products: string[])
   let potentialDeliveryDates: Date[] = initPotentialDeliveryDates();
   const productList: Product[] = initProductList(products);
 
+  if(productList.length == 0) {
+    console.log('No products found.');
+    return [];
+  }
+
   let deliveryDateOptions: DeliveryDateOption[] = [];
   let restrictedDeliveryDaysSet: Set<Date> = new Set<Date>();
 

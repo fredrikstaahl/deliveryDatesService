@@ -77,9 +77,7 @@ export class Product {
   getDeliveryRestrictionsDeliveryDays(potentialDeliveryDays: Date[]): Date[] {
     const deliveryRestrictions: Date[] = [];
     for (const deliveryDate of potentialDeliveryDays) {
-      //console.log(`date = ${deliveryDate}`);
       if (!this.deliveryDays.includes(weekDays[deliveryDate.getDay()])) {
-        //console.log(`${weekDays[deliveryDate.getDay()]} not in ${this.deliveryDays}`);
         deliveryRestrictions.push(deliveryDate);
       }
     }

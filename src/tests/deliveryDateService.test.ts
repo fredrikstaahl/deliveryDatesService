@@ -35,6 +35,11 @@ describe('Test initProductList', () => {
     }
   });
 
+  test.only('test specific product', () => {
+      let initializedProduct: Product = initProductList(['1003'])[0];
+      expect(initializedProduct).toBeDefined;
+  });
+
   test('Test that function returns an empty list if no products are found', () => {
     let initializedProduct: Product[] = initProductList(['2020202', '202020202']);
     expect(initializedProduct).toHaveLength(0);

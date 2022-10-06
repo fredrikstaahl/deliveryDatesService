@@ -3,7 +3,9 @@ import { getPossibleDeliveryDates } from './deliveryDateService';
 //get command arguments and initialize product ids array
 const getProductIdsFromArgs = (): string[] => {
   let productIds: string[] = [];
-  process.argv[2].split(',').map((productId) => productIds.push(productId));
+  const argString = process.argv[2];
+  const productArguments = argString.substring(argString.indexOf('=')+1);
+  productArguments.split(',').map((productId) => productIds.push(productId));
   return productIds;
 };
 
