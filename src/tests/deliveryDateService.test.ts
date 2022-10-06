@@ -35,7 +35,7 @@ describe('Test initProductList', () => {
     }
   });
 
-  test.only('test specific product', () => {
+  test('test specific product', () => {
       let initializedProduct: Product = initProductList(['1003'])[0];
       expect(initializedProduct).toBeDefined;
   });
